@@ -1,13 +1,17 @@
 # J&K — Beyond the Mountains
 ### *One Land. Many Stories.*
 
+🌐 **Live Website**: [Visit J&K — Beyond the Mountains](https://jk-beyond-the-mountains.netlify.app/)
+
 A premier digital cultural archive and editorial platform dedicated to documenting, celebrating, and preserving the multifaceted heritage, oral histories, languages, culinary memories, sacred traditions, and everyday lives of **Jammu & Kashmir**.
 
 ---
 
 ## 🏛️ Project Overview
 
-**J&K — Beyond the Mountains** moves past cliché postcard tropes to present an authentic, dignified, and deeply human portrait of Jammu and Kashmir. Built as a non-commercial cultural initiative, this digital archive bridges generational memory and historical stewardship, offering an immersive literary and visual journey across both provinces.
+**J&K — Beyond the Mountains** moves past cliché postcard tropes to present an authentic, dignified, and deeply human portrait of Jammu and Kashmir. Built as a non-commercial digital cultural archive, the project bridges generational memory and historical stewardship, offering an immersive literary and visual journey across both provinces.
+
+The archive provides a balanced representation of the distinct traditions, living voices, sacred sanctuaries, culinary practices, and landscapes that shape the region's enduring identity.
 
 > *"You came looking for a place. You discovered a people."*
 
@@ -16,7 +20,7 @@ A premier digital cultural archive and editorial platform dedicated to documenti
 ## 👤 Curator & Archival Stewardship
 
 - **Conceived, Curated & Engineered by**: **Saransh Mahajan**
-- **Vision**: To construct a living, digital repository celebrating the distinct cultural identities, shared heritage, and timeless resilience of the communities of Jammu & Kashmir.
+- **Vision**: To construct a living digital repository celebrating the distinct cultural identities, shared heritage, and timeless resilience of the communities of Jammu & Kashmir.
 
 ---
 
@@ -33,7 +37,7 @@ A premier digital cultural archive and editorial platform dedicated to documenti
 ### 3. 🖼️ Horizontal Cultural Photo Journey
 - Smooth side-scrolling photo journey capturing authentic everyday vignettes, sacred architecture, master artisans, and dramatic mountain landscapes.
 
-### 4. 🧭 Explore Our Roots (01–07 Categories)
+### 4. 🧭 Explore Our Roots (Seven Cultural Categories)
 - An editorial index diving into seven core facets of regional identity:
   1. **Craft & Weave**: Pashmina, Kani shawls, Walnut wood carvings, Basohli miniature paintings.
   2. **Architecture & Sanctuaries**: Deodar wood shrines, Dogra stepwells, Khatamband ceilings, and stone temples.
@@ -55,7 +59,7 @@ A premier digital cultural archive and editorial platform dedicated to documenti
 
 ### 8. 🗣️ Words We Should Never Lose (Linguistic Archive)
 - Interactive regional dictionary celebrating native expressions in **Dogri, Kashmiri, Gojri, and Pahari**.
-- Displays original native scripts (Takri/Devanagari/Nastaliq), phonetic guides, contextual meanings, and everyday idioms.
+- Displays original native scripts (Takri/Devanagari/Nastaliq), phonetic guides, contextual meanings, and everyday idioms with interactive browser pronunciation.
 
 ### 9. 🍲 Food & Memory
 - Sensory culinary retrospectives exploring recipes, seasonal ingredients, and nostalgic family memories rooted in regional gastronomy.
@@ -63,9 +67,6 @@ A premier digital cultural archive and editorial platform dedicated to documenti
 ### 10. 🔍 Global Search & Interactive Reader
 - Fast client-side search across timeline events, language idioms, food items, profiles, and cultural categories.
 - Reader modal with typography tuned for long-form comfort.
-
-### 11. 🤝 Community Contribution System
-- Submission modal welcoming community members to submit their own family memories, oral histories, traditional recipes, and vintage photographs.
 
 ---
 
@@ -100,40 +101,65 @@ The design is modeled after high-end editorial publications and archival institu
 
 ---
 
+## 🚀 Getting Started
+
+To run the project locally on your machine:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/saransh-ux/jk-beyond-the-mountains.git
+
+# 2. Navigate to the project directory
+cd jk-beyond-the-mountains
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+```
+
+Open the local URL displayed in your terminal (typically `http://localhost:3000`) in your browser to view the archive.
+
+---
+
 ## 📁 Project Directory Structure
 
 ```plaintext
 jk-beyond-the-mountains/
-├── public/                 # Static public assets & favicon
+├── docs/                   # Documentation & media guides
+│   └── media-replacement-guide.md
+├── public/                 # Static public assets
+│   ├── favicon.svg         # Brand SVG favicon
+│   └── images/             # Archival photography & documentary stills
 ├── src/
-│   ├── components/         # Modular UI & Section Components
+│   ├── components/         # Modular UI & section components
 │   │   ├── Navbar.jsx               # Sticky editorial header & search trigger
 │   │   ├── HeroSection.jsx          # Cinematic opening hero
-│   │   ├── IntroSection.jsx         # "Beyond the Landscape" essay
+│   │   ├── IntroSection.jsx         # "Beyond the Landscape" essay & metrics
 │   │   ├── HistoryTimeline.jsx      # Interactive vertical history timeline
 │   │   ├── TransitionBanner.jsx     # Typographic section interludes
-│   │   ├── HorizontalPhotoJourney.jsx # Side-scrolling visual journey
-│   │   ├── ExploreRoots.jsx         # 7 Core cultural categories
+│   │   ├── HorizontalPhotoJourney.jsx # Pinned horizontal photo journey
+│   │   ├── ExploreRoots.jsx         # Seven core cultural categories
 │   │   ├── VisualStories.jsx        # Dual Jammu & Kashmir spotlights
-│   │   ├── SacredHeritage.jsx       # Sacred sanctuaries & shrines
-│   │   ├── OurPeople.jsx            # Human-centric community profiles
+│   │   ├── SacredHeritage.jsx       # Sacred sanctuaries & pilgrimage sites
+│   │   ├── OurPeople.jsx            # Documentary profiles & cultural custodians
 │   │   ├── LanguagesSection.jsx     # Words We Should Never Lose dictionary
 │   │   ├── FoodMemory.jsx           # Traditional culinary heritage
 │   │   ├── ClosingSection.jsx       # Editorial closing reflection
 │   │   ├── Footer.jsx               # Archival stewardship & credits
-│   │   ├── DetailModal.jsx          # Full-screen article reader view
-│   │   ├── RegionShowcaseModal.jsx  # Interactive dual region photo essay
-│   │   ├── SearchModal.jsx          # Global archive search modal
-│   │   └── ContributionModal.jsx    # Community memory submission form
+│   │   ├── DetailModal.jsx          # Full-screen article & story reader view
+│   │   ├── RegionShowcaseModal.jsx  # Interactive regional photo essay & pillars
+│   │   └── SearchModal.jsx          # Global archive search modal
 │   ├── data/
 │   │   ├── content.js      # Structured datasets (timeline, words, food, people)
-│   │   ├── gallery.js      # Curated image & category galleries
-│   │   └── media.js        # High-res photography & media registry
+│   │   ├── gallery.js      # 9-frame editorial photo journey dataset
+│   │   └── media.js        # High-resolution media & asset registry
 │   ├── hooks/
-│   │   └── useLenis.js     # Lenis smooth-scroll React hook
+│   │   └── useLenis.js     # Lenis smooth inertia scrolling hook
 │   ├── App.jsx             # Main layout orchestrator & modal state
 │   ├── index.css           # Global typography, color tokens, and base CSS
-│   └── main.jsx            # React root mount
+│   └── main.jsx            # React 18 root mount
 ├── index.html              # HTML entry point with Google Fonts preload
 ├── package.json            # Project dependencies and npm scripts
 ├── tailwind.config.js      # Custom theme color tokens and font families
@@ -146,7 +172,6 @@ jk-beyond-the-mountains/
 
 - [ ] **Audio Pronunciations**: Integrate native speaker voice recordings for each word in the *Words We Should Never Lose* dictionary.
 - [ ] **Interactive GIS Map**: Clickable cartographic map marking historical monuments, craft clusters, and shrines.
-- [ ] **Backend / CMS Integration**: Connect the *Community Contribution* form to a headless CMS (e.g., Supabase / Sanity) for moderated public submissions.
 - [ ] **Bilingual Toggle**: Multi-lingual interface support (English, Hindi, and Urdu).
 
 ---
