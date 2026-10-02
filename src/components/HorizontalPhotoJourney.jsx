@@ -116,7 +116,7 @@ export function HorizontalPhotoJourney() {
                       >
                         <img
                           src={item.image}
-                          alt={item.title}
+                          alt={item.alt || item.title}
                           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                           loading="lazy"
                           decoding="async"
@@ -235,7 +235,7 @@ export function HorizontalPhotoJourney() {
                 <div className="relative aspect-[4/5] bg-stone-beige overflow-hidden border border-stone-border shadow-lg">
                   <img
                     src={item.image}
-                    alt={item.title}
+                    alt={item.alt || item.title}
                     className="w-full h-full object-cover"
                     loading="lazy"
                     decoding="async"

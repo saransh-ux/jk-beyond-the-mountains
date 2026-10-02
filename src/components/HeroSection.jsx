@@ -38,23 +38,25 @@ export function HeroSection() {
           </span>
         </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.2, ease: 'easeOut' }}
-          className="font-serif text-6xl sm:text-8xl md:text-9xl font-bold tracking-tight text-white drop-shadow-sm"
-        >
-          J&amp;K
-        </motion.h1>
+        <h1 className="space-y-6">
+          <motion.span
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.2, ease: 'easeOut' }}
+            className="block font-serif text-6xl sm:text-8xl md:text-9xl font-bold tracking-tight text-white drop-shadow-sm"
+          >
+            J&amp;K
+          </motion.span>
 
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.4, ease: 'easeOut' }}
-          className="font-serif text-3xl sm:text-4xl md:text-6xl font-light italic tracking-wide text-stone-beige"
-        >
-          Beyond the Mountains
-        </motion.h2>
+          <motion.span
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.4, ease: 'easeOut' }}
+            className="block font-serif text-3xl sm:text-4xl md:text-6xl font-light italic tracking-wide text-stone-beige"
+          >
+            Beyond the Mountains
+          </motion.span>
+        </h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

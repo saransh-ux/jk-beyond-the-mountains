@@ -48,6 +48,9 @@ export function SearchModal({ isOpen, onClose, onSelectResult }) {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Search Cultural Archive"
           className="relative z-10 w-full max-w-3xl bg-paper border border-stone-border shadow-2xl overflow-hidden text-charcoal"
           data-lenis-prevent
         >
@@ -60,10 +63,12 @@ export function SearchModal({ isOpen, onClose, onSelectResult }) {
               placeholder="Search history, traditions, people, food, languages..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
+              aria-label="Search cultural archive"
               className="w-full bg-transparent text-lg font-serif placeholder:font-sans placeholder:text-charcoal-soft focus:outline-none text-charcoal"
             />
             <button
               onClick={onClose}
+              aria-label="Close search"
               className="p-2 text-charcoal-soft hover:text-charcoal hover:bg-paper rounded-full transition-colors"
             >
               <X className="w-5 h-5" />
