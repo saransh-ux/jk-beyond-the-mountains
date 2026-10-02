@@ -17,7 +17,10 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           src={mediaAssets.heroBg}
+          srcSet={`${mediaAssets.heroBgMobile} 800w, ${mediaAssets.heroBg} 1200w`}
+          sizes="100vw"
           alt="Jammu and Kashmir Landscape"
+          fetchPriority="high"
           className="w-full h-full object-cover object-center scale-105 transition-transform duration-[10000ms] ease-out hover:scale-100"
           loading="eager"
         />
@@ -30,7 +33,7 @@ export function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: 'easeOut' }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
           className="inline-block"
         >
           <span className="text-xs md:text-sm tracking-ultra uppercase text-paper/90 font-sans font-medium px-4 py-1.5 border border-white/25 rounded-full backdrop-blur-xs">
@@ -42,7 +45,7 @@ export function HeroSection() {
           <motion.span
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.2, ease: 'easeOut' }}
+            transition={{ duration: 1, delay: 0.15, ease: 'easeOut' }}
             className="block font-serif text-6xl sm:text-8xl md:text-9xl font-bold tracking-tight text-white drop-shadow-sm"
           >
             J&amp;K
@@ -51,7 +54,7 @@ export function HeroSection() {
           <motion.span
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.4, ease: 'easeOut' }}
+            transition={{ duration: 1, delay: 0.3, ease: 'easeOut' }}
             className="block font-serif text-3xl sm:text-4xl md:text-6xl font-light italic tracking-wide text-stone-beige"
           >
             Beyond the Mountains
@@ -61,7 +64,7 @@ export function HeroSection() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.45 }}
           className="font-sans text-base sm:text-lg md:text-xl font-light text-paper/90 max-w-2xl mx-auto tracking-wide"
         >
           A journey through the land, its people and its memory.
@@ -70,7 +73,7 @@ export function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
           className="pt-6"
         >
           <button

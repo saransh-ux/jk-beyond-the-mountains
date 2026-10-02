@@ -9,18 +9,19 @@
 
 export const mediaAssets = {
   // Hero background: Panoramic view of snow-capped mountains and tranquil waters
-  heroBg: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=80&w=2000&auto=format&fit=crop", // Kashmir mountain reflection
-  heroPoster: "https://images.unsplash.com/photo-1566837945700-30057527ade0?q=80&w=2000&auto=format&fit=crop",
+  heroBg: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=75&w=1200&auto=format&fit=crop", // Kashmir mountain reflection (optimized for high-DPI desktop & cache sharing)
+  heroBgMobile: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=75&w=800&auto=format&fit=crop", // Mobile-optimized resolution
+  heroPoster: "https://images.unsplash.com/photo-1566837945700-30057527ade0?q=75&w=1200&auto=format&fit=crop", // Closing background texture
 
   // Introduction section image
-  introImage: "https://images.unsplash.com/photo-1598091383021-15ddea10925d?q=80&w=1200&auto=format&fit=crop", // Valley mist and pine forest
+  introImage: "https://images.unsplash.com/photo-1598091383021-15ddea10925d?q=75&w=800&auto=format&fit=crop", // Valley mist and pine forest (optimized card dimensions)
 
   // Jammu visual story
   jammuMain: "/images/bahu fort-jammu.jpg", // Bahu Fort / Tawi landscape mood
   jammuSecondary: "/images/dogra architecture-jammu.jpg", // Heritage archways and Dogra architecture
 
-  // Kashmir visual story
-  kashmirMain: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=80&w=1200&auto=format&fit=crop", // Dal Lake Shikara at sunrise
+  // Kashmir visual story - unified with heroBg to leverage browser HTTP cache
+  kashmirMain: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=75&w=1200&auto=format&fit=crop", // Dal Lake Shikara (shares cache with heroBg)
   kashmirSecondary: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000&auto=format&fit=crop", // Pine mountain forest
   kaniShawls: "/images/kani shawls-kashmir.webp", // Kani Shawls craftsmanship
 
