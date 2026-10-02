@@ -28,7 +28,7 @@ export function ExploreRoots({ onSelectCategory }) {
             return (
               <motion.div
                 key={cat.id}
-                id={`explore-${cat.id}`}
+                id={cat.id === 'food' || cat.id === 'languages' ? `category-${cat.id}` : `explore-${cat.id}`}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}

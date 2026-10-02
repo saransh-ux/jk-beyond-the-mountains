@@ -31,7 +31,7 @@ export function CommunitySection({ onOpenContributionOption }) {
   ];
 
   return (
-    <section className="py-24 md:py-36 bg-stone-beige text-charcoal relative">
+    <section id="community" className="py-24 md:py-36 bg-stone-beige text-charcoal relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
         {/* Section Header */}
