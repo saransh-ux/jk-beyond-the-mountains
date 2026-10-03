@@ -54,20 +54,20 @@ export const mediaAssets = {
 
   // People Profiles & Cultural Luminaries
   peopleProfiles: {
-    "ghulam-nabi-dar": "/images/ghulam_nabi_dar.jpg",
-    "ghulam-rasool-khan": "/images/ghulam_rasool_khan.jpg",
-    "sopori-lineage": "/images/sopori_santoor_legacy.jpg",
-    "romalo-ram": "/images/romalo_ram_dogri.jpg",
-    "rehman-rahi": "/images/rehman_rahi_poet.jpg",
-    "mehjoor": "/images/mehjoor_poet_kashmir.jpg"
+    "ghulam-nabi-dar": "/images/ghulam_nabi_dar.webp",
+    "ghulam-rasool-khan": "/images/ghulam_rasool_khan.webp",
+    "sopori-lineage": "/images/sopori_santoor_legacy.webp",
+    "romalo-ram": "/images/romalo_ram_dogri.webp",
+    "rehman-rahi": "/images/rehman_rahi_poet.webp",
+    "mehjoor": "/images/mehjoor_poet_kashmir.webp"
   },
 
   // Food & Memory
   foodDishes: {
-    kaladi: "/images/kaladi cheese-jammu.jpg", // Traditional pan-fried cheese
-    kahwa: "/images/kashmiri-kahwa.jpg", // Saffron & cardamom tea in copper samovar
-    ambal: "/images/dogri-ambal.jpg", // Authentic Dogri sweet-sour pumpkin & Dham feast
-    ristaGustaba: "/images/rista-gustaba.jpg" // Royal Kashmiri Wazwan course (Rista & Gustaba)
+    kaladi: "/images/kaladi cheese-jammu.webp", // Traditional pan-fried cheese
+    kahwa: "/images/kashmiri-kahwa.webp", // Saffron & cardamom tea in copper samovar
+    ambal: "/images/dogri-ambal.webp", // Authentic Dogri sweet-sour pumpkin & Dham feast
+    ristaGustaba: "/images/rista-gustaba.webp" // Royal Kashmiri Wazwan course (Rista & Gustaba)
   },
 
   // Documentary Video Thumbnails
